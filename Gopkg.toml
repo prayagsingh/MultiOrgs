@@ -1,0 +1,7 @@
+ignored = ["github.com/privacytracker/chaincode", "github.com/milagro-crypto/amcl"] 
+
+[[constraint]]
+ # Release v1.0.0-alpha5
+ name = "github.com/hyperledger/fabric-sdk-go"
+ #revision = "5d7ae7a5be8f459fc56654a6a962d823d0413fab"
+ revision = "0e710cebffe5674d411a625bc103ff0e266bb5e1"
