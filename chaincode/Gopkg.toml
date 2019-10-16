@@ -1,0 +1,29 @@
+[prune]
+  go-tests = true
+  unused-packages = true
+
+[[override]]
+  name = "gopkg.in/fsnotify.v1"
+  source = "gopkg.in/fsnotify/fsnotify.v1"
+
+[[override]]
+  branch = "master"
+  name = "github.com/hpcloud/tail"
+
+
+[[constraint]]
+  name = "github.com/hyperledger/fabric"
+  version = "1.4.2"
+
+[[override]]
+  name = "github.com/docker/docker"
+  branch = "master"
+
+[[override]]
+  name = "github.com/docker/libnetwork"
+  branch = "master"
+
+# using it for windows-go lang bug https://github.com/golang/go/issues/34610
+[[override]]
+  name = "golang.org/x/sys"
+  revision = "0c1ff786ef13daa914a3351c5e6b0321aed5960e"  
