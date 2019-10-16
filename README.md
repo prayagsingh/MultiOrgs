@@ -22,7 +22,7 @@ This project is a Multi-Organization setup built using [HLFv1.4.2](https://githu
 
 5. Fabric-Go-Sdk: `v1.0.0-alpha5 revision: 0e710cebffe5674d411a625bc103ff0e266bb5e1`
 
-6. Using `Dep` for dependency.
+6. Using `Dep` for dependency management.
 
 ## Installing 
 ##### Go to `$GOPATH/src/github.com/MultiOrgs` directory.
@@ -74,3 +74,6 @@ This project is a Multi-Organization setup built using [HLFv1.4.2](https://githu
     e.6: Delete user
     
     curl --header "Content-Type: application/json" -H "Authorization: Bearer <Access_Token>" --request DELETE --data '{"Email": "beta@gmail.com", "Role": "user", "Org":"Org_Name"}' http://localhost:5050/api/delete_user
+   
+   
+### Thanks   
