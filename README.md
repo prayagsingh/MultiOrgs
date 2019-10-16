@@ -2,15 +2,30 @@
 This project is a Multi-Organization setup built using [HLFv1.4.2](https://github.com/hyperledger/fabric/tree/v1.4.2) and [GO-SDKv1.0.0-alpha5](https://github.com/hyperledger/fabric-sdk-go/tree/v1.0.0-alpha5). In this project, we have three organizations `OrdererOrganization`, `Org1` and `Org2`. So `Org1` and `Org2` are like a bank with some amount associated with each organization. We can add a new `User` with some amount say `X` to an organization and it's amount will be added to the total amount of the organization. when a user withdrawls the amount then its amount will be removed from the organization.
 
 ## Getting Started
-#### Check for vendor directory in chaincode directory and project directory itself
-1. Go to `chaincode` directory and check for `vendor` directory. If it is not present then run command `dep ensure` for creating a `vendor` directory **OR** 
+1. Clone this project in `$GOPATH/src/github.com` directory
 
-2. If the vendor directory is present then go to `chaincode/vendor/github.com/docker/docker/integration-cli/fixtures/https` directory and run `tar -zxvf certs.tar` command.
+2. Check for `vendor` directory in `$GOPATH/src/github.com/MultiOrgs/chaincode` directory and `$GOPATH/src/github.com/MultiOrgs` directory itself.
 
-Now you are good to go. 
+  2.a: Go to `chaincode` directory and check for `vendor` directory. If it is not present then run command `dep ensure` for creating a `vendor` directory **OR** 
 
-#### Steps to start the network
-##### Assuming you are in `MultiOrgs` directory.
+  2.b: If the vendor directory is present then go to `chaincode/vendor/github.com/docker/docker/integration-cli/fixtures/https` directory and run `tar -zxvf certs.tar` command.
+
+### Prerequisites
+
+1. GoLang: `go1.13.1 linux/amd64`
+
+2. Docker: `18.09.3, build 774a1f4`
+
+3. Docker-compose: `1.24.0, build 0aa59064`
+
+4. Hyperledger-Fabric: `v1.4.2`
+
+5. Fabric-Go-Sdk: `v1.0.0-alpha5 revision: 0e710cebffe5674d411a625bc103ff0e266bb5e1`
+
+6. Using `Dep` for dependency.
+
+## Installing 
+##### Go to `$GOPATH/src/github.com/MultiOrgs` directory.
 1. Run `make` command. Operations carried out by `make` command are:-
 
    a. Remove previous containers, network and volumes from docker. 
