@@ -6,7 +6,7 @@ This project is a Multi-Organization setup built using [HLFv1.4.2](https://githu
 
 2. Check for `vendor` directory in `$GOPATH/src/github.com/MultiOrgs/chaincode` directory and `$GOPATH/src/github.com/MultiOrgs` directory itself.
   
-      2.a: Go to `chaincode` directory and check for `vendor` directory. If it is not present then run command `dep ensure` for creating a `vendor` directory **OR** 
+      2.a: If `vendor` directory is not present then run command `dep ensure` in `$GOPATH/src/github.com/MultiOrgs/chaincode` for creating a `vendor` directory **OR** 
 
       2.b: If the vendor directory is present then go to `chaincode/vendor/github.com/docker/docker/integration-cli/fixtures/https` directory and run `tar -zxvf certs.tar` command.
 
